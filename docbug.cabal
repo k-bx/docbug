@@ -1,0 +1,28 @@
+name:                docbug
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/githubuser/doctest-bug#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Author name here
+maintainer:          example@example.com
+copyright:           2017 Author name here
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+library
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+  exposed-modules:     SomeLib
+
+test-suite doctests
+ default-language: Haskell2010
+ type:             exitcode-stdio-1.0
+ main-is:          tests/doctests.hs
+ build-depends:    base
+                 , docbug
+                 , doctest
