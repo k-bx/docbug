@@ -1,5 +1,7 @@
 # doctest-bug
 
+## UPDATE: FIXED! See https://github.com/sol/doctest/issues/167#issuecomment-313301338
+
 Just `stack test` and see:
 
 ```
